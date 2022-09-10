@@ -16,9 +16,6 @@ ADD https://github.com/minima-global/Minima/raw/master/jar/minima.jar minima/min
 RUN mkdir -p $HOME/data
 RUN mkdir -p $HOME/dapps
 
-# Copy over the MiniDAPPs
-COPY *.mds.zip $HOME/dapps/
-
 # Copy the Config
 COPY minima.config $HOME/minima.config
 
